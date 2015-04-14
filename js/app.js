@@ -1,9 +1,10 @@
 $(document).ready(function() {
     console.log( 'ready!' );
- });
+});
 
+// fizzbuzz: takes a number and returns fizz, buzz, or fizzbuzz (or the number)
  var fizzbuzz = function(number) {
- 	if (number % 3 === 0 && number% 5 === 0) {
+ 	if (number % 3 === 0 && number % 5 === 0) {
  		return 'fizz buzz';
  	}
 
@@ -20,9 +21,8 @@ $(document).ready(function() {
  		}
  }
 
-
- 
-$('form').submit(function(e) {
+//
+ $('form').submit(function(e) {
  	var number = $('#enter-number').val();
  	$('.output').empty();
  	while (number <= 100) {
@@ -31,3 +31,5 @@ $('form').submit(function(e) {
  	}
  	e.preventDefault();
  }); 
+  
+
